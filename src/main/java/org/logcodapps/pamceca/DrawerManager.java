@@ -18,6 +18,7 @@ import static org.logcodapps.pamceca.PamCesa.SECONDARY_VIEW;
 public class DrawerManager {
 
     public static void buildDrawer(MobileApplication app) {
+    	
         NavigationDrawer drawer = app.getDrawer();
        
         NavigationDrawer.Header header = new NavigationDrawer.Header("PLATAFORMA PAM-CECA",
@@ -27,7 +28,8 @@ public class DrawerManager {
         
         final Item primaryItem = new ViewItem("Tela Inicial", MaterialDesignIcon.HOME.graphic(), PRIMARY_VIEW, ViewStackPolicy.SKIP);
         final Item secondaryItem = new ViewItem("Login do Usuário", MaterialDesignIcon.PEOPLE.graphic(), SECONDARY_VIEW);
-        drawer.getItems().addAll(primaryItem, secondaryItem);
+        final Item cadastraSe = new ViewItem("Cadastra-se", MaterialDesignIcon.PERSON_OUTLINE.graphic(),PamCesa.REGISTRE_SE);
+        drawer.getItems().addAll(primaryItem, secondaryItem,cadastraSe);
         
         if (Platform.isDesktop()) {
             final Item quitItem = new Item("Quit", MaterialDesignIcon.EXIT_TO_APP.graphic());

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.mvc.View?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<View fx:id="guiPainel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="350.0" stylesheets="@secondary.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.logcodapps.pamceca.views.GuiPainelPresente">
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="121.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@mate.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MATEMÁTICA" textAlignment="CENTER" wrappingWidth="230.9830722808838">
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial Narrow Bold" size="35.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </Separator>
+            <Label text="Plataforma Digital PAM-CECA">
+               <font>
+                  <Font name="Bernard MT Condensed" size="26.0" />
+               </font>
+            </Label>
+            <Label text="Auxiliando o ensino através de metodologias inovadoras ">
+               <font>
+                  <Font name="Arial Narrow" size="15.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER" prefWidth="350.0">
+               <children>
+                  <Hyperlink fx:id="hlJogos" prefHeight="68.0" prefWidth="299.0" style="-fx-background-color: blue; -fx-background-radius: 5pt; -fx-text-fill: white; -fx-alignment: center;" text="JOGOS">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="46.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Hyperlink>
+                  <Hyperlink fx:id="hlSimulados" prefHeight="66.0" prefWidth="300.0" style="-fx-background-color: blue; -fx-background-radius: 5pt; -fx-text-fill: white; -fx-alignment: center;" text="SIMULADOS">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="45.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Hyperlink>
+                  <Hyperlink fx:id="hlAtividades" prefHeight="66.0" prefWidth="300.0" style="-fx-background-color: blue; -fx-background-radius: 5pt; -fx-text-fill: white; -fx-alignment: center;" text="ATIVIDADES ">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="45.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Hyperlink>
+                  <Hyperlink fx:id="hlVideos" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: blue; -fx-background-radius: 5pt; -fx-text-fill: white; -fx-alignment: center;" text="VÍDEOS">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="45.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Hyperlink>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="4.0" right="4.0" top="30.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</View>

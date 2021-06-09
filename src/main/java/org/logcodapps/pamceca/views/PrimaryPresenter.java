@@ -1,5 +1,7 @@
 package org.logcodapps.pamceca.views;
 
+import org.logcodapps.pamceca.PamCesa;
+
 import com.gluonhq.charm.glisten.application.MobileApplication;
 import com.gluonhq.charm.glisten.control.AppBar;
 import com.gluonhq.charm.glisten.mvc.View;
@@ -11,7 +13,7 @@ import javafx.scene.image.ImageView;
 
 public class PrimaryPresenter {
 
-    private static final String SECONDARY_VIEW = null;
+    private static final String SECONDARY_VIEW=null;
 
 	@FXML
     private View primary;
@@ -35,12 +37,12 @@ public class PrimaryPresenter {
                         System.out.println("Buscar info")));
             }
         });
-      //  carrgeraImageTexto();
+      
     }
     
     @FXML
     void buttonClick() {
-    	System.out.println("Chamar pagina ...");
+    	PamCesa.getInstance().switchView(PamCesa.SECONDARY_VIEW);
     }
     
 }

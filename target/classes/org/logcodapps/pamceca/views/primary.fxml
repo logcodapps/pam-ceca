@@ -14,14 +14,20 @@
    <center>
       <VBox alignment="CENTER" prefHeight="600.0" prefWidth="332.0" spacing="15.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="246.0" fitWidth="287.0" pickOnBounds="true" preserveRatio="true">
+            <Label text="PAM-CECA">
+               <font>
+                  <Font name="Albertus Medium Italic" size="30.0" />
+               </font>
+            </Label>
+            <Label text="PLATAFORMA DIGITAL" />
+            <ImageView fitHeight="293.0" fitWidth="287.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@fot-pan-ceca-texto.png" />
+                  <Image url="@logo.jpeg" />
                </image>
             </ImageView>
-            <Button mnemonicParsing="false" onAction="#buttonClick" prefHeight="92.0" prefWidth="273.0" style="-fx-background-color: #33CCFF; -fx-font-size: 30; -fx-font-weight: bold; -fx-text-fill: black; -fx-border-radius: 20pt;" text="COMEÇAR ">
+            <Button mnemonicParsing="false" onAction="#buttonClick" prefHeight="92.0" prefWidth="290.0" style="-fx-background-color: silver; -fx-font-size: 30; -fx-font-weight: bold; -fx-text-fill: black; -fx-border-radius: 20pt;" text="COMEÇAR ">
                <graphic>
-                  <Icon content="LANGUAGE" />
+                  <Icon content="TIMELINE" />
                </graphic>
                <font>
                   <Font name="Apple Garamond Light" size="25.0" />
